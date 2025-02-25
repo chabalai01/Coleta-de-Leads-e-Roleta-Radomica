@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Roleta Randômica</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/Sorteio.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Roleta Randômica</h1>
+        <div id="roleta">
+            <div id="interno-roleta">
+                
+                <div class="sec" id="premio-grande">
+                    <span class="texto">Prêmio <br>Grande</span>
+                </div>
+                <div class="sec" id="premio-medio">
+                    <span class="texto">Prêmio <br>Médio</span>
+                </div>
+                <div class="sec" id="premio-baixo">
+                    <span class="texto">Prêmio <br>Baixo</span>
+                </div>
+                <div class="sec" id="sem-premio-1">
+                    <span class="texto">Não foi desta vez</span>
+                </div>
+                <div class="sec" id="sem-premio-2">
+                    <span class="texto">Não foi desta vez</span>
+                </div>
+                <div class="sec" id="sem-premio-3">
+                    <span class="texto">Não foi desta vez</span>
+                    
+                </div>
+            </div>       
+            <div id="spin">
+                <div id="interno-spin">
+                    <img src="/assets/img/Logo CM.png" alt="Camasso Logo" class="spin-logo">
+                </div>
+                <div id="pointer"></div>
+                <div class="pointer"></div>
+            </div>
+        </div>
+        <button id="spin-button">Girar Roleta</button>
+        <audio id="roletaSound" preload="auto">
+            <source src="../sounds/roleta.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src='../js/sorteio.js'></script>
+</body>
+</html>
